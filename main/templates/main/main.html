@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор ПНИП</title>
+</head>
+<body>
+    <h1>Калькулятор ПНИП</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Рассчитать</button>
+    </form>
+
+    {% if result %}
+        <h2>Результат: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
