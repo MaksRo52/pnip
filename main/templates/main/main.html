@@ -117,7 +117,7 @@
         {% if result %}
             <div class="result">
                 <h2>Результаты</h2>
-                <p><strong>Рассчитанное значение:</strong> {{ result|floatformat:2 }}</p>
+                <p><strong>Долженствующий результат:</strong> {{ result|floatformat:2 }}</p>
                 <p><strong>Нижняя граница нормы:</strong> {{ minimal_result|floatformat:2 }}</p>
                 <p><strong>% от долженствующих величин:</strong> {{ dv|floatformat:2 }} %</p>
             </div>
