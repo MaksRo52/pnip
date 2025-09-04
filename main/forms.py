@@ -13,3 +13,4 @@ class HeightForm(forms.Form):
         label="Пол",
         widget=forms.RadioSelect
     )
+    pnip_result = forms.FloatField(label="Результат измерения ПНИП (л/с)", min_value=10, max_value=300)
